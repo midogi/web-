@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week2-1</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <script>
+        function go(obj){
+
+            switch (obj){
+                case "월":
+                case "화":
+                case "수":
+                case "목":document.write(obj+"는 출근");
+                            break;
+                case "금":
+                case "토":
+                case "일":document.write(obj+"는 휴일");        
+            }
+        }
+
+    </script>
+
+    <body>
+       
+        <h3>월화수목금토일</h3>
+        <hr>
+
+        <script>
+            let n=prompt("월화수목금토일 중에서 입력하세요","");
+            go(n);
+
+        </script>
+        
+       
+   
+    </body>
+ </html>
