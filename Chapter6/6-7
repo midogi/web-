@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week2-1</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <script>
+        function go(kdm) {
+            let a = parseInt(kdm);
+            let b = parseInt(kdm);
+            let most = 0;
+            b %= 10;  // 마지막 자리 숫자를 저장
+
+            while (a >= 10) {  // a가 10 이상인 동안
+                a = Math.floor(a / 10);  // a를 10으로 나눈 값을 정수로 저장
+            }
+            most = a;  // 가장 큰 자리수 저장
+            
+            if (most == b) {
+                document.write(kdm + ": 같음");
+            } else {
+                document.write(kdm + ": 다름");
+            }
+        }
+    </script>
+
+    <body>
+        <h3>큰 자리수와 낮은자리수 같은지 비교</h3>
+        <hr>
+       
+        <script>
+            let n = prompt("숫자 입력", "");
+            go(n);
+        </script>
+    </body>
+</html>
