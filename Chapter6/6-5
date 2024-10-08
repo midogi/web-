@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week2-1</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <script>
+     
+
+    </script>
+
+    <body>
+       
+        <h3>암호를 입력하라!</h3>
+        <hr>
+
+        <script>
+
+            let n=prompt("암호를 입력하라!","");
+            while(n!="you"){
+                n=prompt("암호를 입력하라!","");
+            }         
+            document.write("통과!");  
+
+        </script>
+        
+       
+   
+    </body>
+ </html>
