@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week2-1</title>
+        <meta charset="UTF-8">
+    </head>
+
+
+    <body>
+       <h3>eval()로 수식 계산</h3>
+       <hr>
+       <script>
+        var n=prompt("수식 입력","");
+        let nn=eval(n);
+        document.write(n+" ="+nn);
+        </script>
+
+    </body>
+</html>
