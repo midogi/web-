@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>문자열 배열 다루기</title>
+</head>
+<body>
+<h3>book 객체 만들기</h3>
+<hr>
+<script>
+    let book=new Object();
+    book.title="HTML5";
+    book.author="황기태";
+    book.price=20000;
+    document.write("book:"+book.title+", "+book.author+", "+book.price);
+    document.write("<br>");
+
+    let book2 ={
+
+        title:"HTML5",
+        author:"황기태",
+        price:20000
+
+    };
+
+    function book3(){
+
+        this.title2="HTML5"
+        this.author2="황기태"
+        this.price2=20000;
+
+    }
+
+    document.write("book : ");
+    document.write(book2.title + ", ");
+    document.write(book2.author + ", ");
+    document.write(book2.price + "<br>");
+
+    let kdm=new book3();
+
+    document.write("book : ");
+    document.write(kdm.title2 + ", ");
+    document.write(kdm.author2 + ", ");
+    document.write(kdm.price2 + "<br>");
+   
+  
+
+</script>
+</body>
+</html>
