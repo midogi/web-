@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week2-1</title>
+        <meta charset="UTF-8">
+    </head>
+
+
+    <body>
+     
+        <h3>정수 5개 입력받아 역순으로 출력</h3>
+        <hr>
+        
+       <script>
+        let n=1;
+        let k=0;
+        let arr=new Array(5);
+        while(true){
+            let kdm=prompt("정수 입력","");
+            arr[k++]=parseInt(kdm);
+            if(n==5){
+                break;
+            }
+            n++;
+
+        }
+        document.write("입력된 수의 배열"+"<hr>");
+        for(let i=0; i<arr.length; i++){
+            document.write(arr[i]+" ");
+        }
+        arr.reverse();
+        document.write("<hr>");
+        for(let i=0; i<arr.length; i++){
+            document.write(arr[i]+" ");
+        }
+
+      </script>
+      
+
+
+
+    </body>
+</html>
