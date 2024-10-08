@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week2-1</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <script>
+        function color(kdm){
+            kdm.style.backgroundColor="yellow";
+        }
+
+        function colo(obj){
+            obj.style.backgroundColor="White";
+        }
+    </script>
+
+
+    <body>
+       
+        <h3>마우스를 올려보세요</h3>
+        <hr>
+
+        <div onmouseover="color(this)" onmouseout="colo(this)" >여기에 마우스를 올리면 배경색이 노란색으로 변합니다.</div>
+    
+ 
+       
+   
+    </body>
+ </html>
