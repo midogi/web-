@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습 문제 10-5</title>
+  <script>
+    let clock;
+    let timer = null;
+    function startClock() {
+      clock = document.getElementById('clock');
+      showTime();
+      timer = setInterval("showTime()", 1000);
+
+    }
+    
+    function showTime() {
+      let time = new Date();
+      clock.innerHTML = time.toLocaleTimeString();
+    }
+
+    function stop_start_clock() {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;    
+        clock.style.color = 'gray';
+      } 
+      else if (timer ==null){
+        timer = setInterval("showTime()", 1000);
+        clock.style.color = 'black';
+      }
+    }
+    </script>
+</head>
+<body onload="startClock()">
+  <h2>div 태그에 시계 만들기</h2>
+  <hr>
+  <div id="clock" onclick="stop_start_clock()">
+    
+  </div>
+  
+</body>
+</html>
