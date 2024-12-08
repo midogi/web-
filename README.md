@@ -1,6 +1,6 @@
 1w.html
-- 1주차 연습
-- 기본 HTML 문서 작성
+-1주차 연습
+-기본 HTML 문서 작성
 Week2.html
 - 2주차 연습
 week3.html
